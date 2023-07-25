@@ -52,7 +52,7 @@ async function getFoursquare(business) {
 		method: 'GET',
 		headers: {
 		Accept: 'application/json',
-		Authorization: 'fsq3ATzZbmcGhdeFafr73wZcnJ+LlN6bK+4dh19a7ClS4u8='
+		Authorization: 'fsq3SCEF2R/UXX7/M4cAw/rrs8MmsHDa8EJ1ReCR/0fk/MY='
 		}
 	}
 	let limit = 5
@@ -64,6 +64,8 @@ async function getFoursquare(business) {
 	let businesses = parsedData.results
 	return businesses
 }
+
+
 // process foursquare array
 function processBusinesses(data) {
 	let businesses = data.map((element) => {
